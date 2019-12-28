@@ -13,7 +13,7 @@ import { ClientSearchComponent } from './components/client-search/client-search.
 import { AdminLandingComponent } from './components/admin-landing/admin-landing.component';
 import { ClientLandingComponent } from './components/client-landing/client-landing.component';
 import { RouterModule, Routes } from '@angular/router';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'signup', component: SignupComponent },
@@ -36,6 +36,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes, { enableTracing: true})
   ],
   providers: [],

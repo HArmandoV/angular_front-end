@@ -1,1 +1,23 @@
-<p>signup works!</p>
+<h1>Sign Up</h1>
+ 
+<form id="form" [formGroup]="signupForm">
+ <label>Name: </label>
+ <input formControlName="name" type="text"/>
+ <br/>
+ 
+ <label>Surname: </label>
+ <input formControlName="surname" type="text"/>
+ <br/>
+ 
+ <label>Username: </label>
+ <input formControlName="username" type="text"/>
+ <br/>
+ 
+ <label>Password: </label>
+ <input formControlName="password" type="password"/>
+ <br/>
+ 
+ <button [disabled]="signupForm.invalid" type="submit">Registrarse</button>
+ 
+</form>
+

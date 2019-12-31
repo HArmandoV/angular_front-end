@@ -9,23 +9,23 @@
 
             <p>
                 <label>Catalog name: </label>
-                <input formControlName="catalog_name" type="text"/>
+                <input formControlName="catalog_name" id="catalogName" type="text"/>
             </p>
             <p>
                 <label>Catalog id: </label>
-                <input formControlName="catalog_id" type="text"/>
+                <input formControlName="catalog_id" id="catalogId" type="text"/>
             </p>
             <p>
                 <label>Availability: </label>
-                <input formControlName="availability" type="checkbox"/>
+                <input formControlName="availability" id="availabilityy" type="checkbox"/>
             </p>
         
             <p>
                 <label>Catalog price: </label>
-                <input formControlName="catalog_price" type="text"/>
+                <input formControlName="catalog_price" id="catalogPrice" type="text"/>
             </p>
         
-            <button [disabled]="newcatalogForm.invalid" type="submit">Create catalog</button>
+            <button [disabled]="newcatalogForm.invalid" (click) = createCatalog() type="submit">Create catalog</button>
         
                 
         </form>

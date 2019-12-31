@@ -12,14 +12,15 @@
         <div>
             <div class="block">
                 <!-- <label>Enter id: </label> -->
-                <input class="data" type="text" placeholder="Enter catalog id"/>
+                <input class="data" id="id-catalog-html" type="text" placeholder="Enter catalog id"/>
             </div>
             <div class="block">
                 <button class="left">
                     <a href="http://localhost:4200/update_catalog">Update</a>
                 </button>
-                <button class="right">Delete</button>
+                <button class="right" (click)="catalogDelete()" >Delete</button>
             </div>
         </div>
+        <div id="catalog-elements"></div>
     </body>
 </html>

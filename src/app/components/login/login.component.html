@@ -1,1 +1,16 @@
-<p>login works!</p>
+<h1>Log in</h1>
+
+<form id="form" [formGroup]="loginForm">
+
+    <p>
+        <label>Username: </label>
+        <input formControlName="username" type="text"/>
+    </p>
+    <p>
+        <label>Password: </label>
+        <input formControlName="password" type="password"/>
+    </p>
+
+    <button [disabled]="loginForm.invalid" type="submit">Log in</button>
+        
+</form>

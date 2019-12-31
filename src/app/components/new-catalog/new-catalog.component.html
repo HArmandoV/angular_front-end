@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>New catalog</h1>
+
+        <form id="form" [formGroup]="newcatalogForm">
+
+            <p>
+                <label>Catalog name: </label>
+                <input formControlName="catalog_name" type="text"/>
+            </p>
+            <p>
+                <label>Catalog id: </label>
+                <input formControlName="catalog_id" type="text"/>
+            </p>
+            <p>
+                <label>Availability: </label>
+                <input formControlName="availability" type="checkbox"/>
+            </p>
+        
+            <p>
+                <label>Price catalog: </label>
+                <input formControlName="catalog_price" type="text"/>
+            </p>
+        
+            <button [disabled]="newcatalogForm.invalid" type="submit">Create catalog</button>
+        
+                
+        </form>
+    </body>
+</html>

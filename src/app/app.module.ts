@@ -14,10 +14,25 @@ import { AdminLandingComponent } from './components/admin-landing/admin-landing.
 import { ClientLandingComponent } from './components/client-landing/client-landing.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NewCatalogComponent } from './components/new-catalog/new-catalog.component';
+import { UpdateCatalogComponent } from './components/update-catalog/update-catalog.component';
+import { UpdateProductComponent } from './components/update-product/update-product.component';
+import { NewProductComponent } from './components/new-product/new-product.component';
 
 const appRoutes: Routes = [
   { path: 'signup', component: SignupComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'client_catalog', component: ClientCatalogComponent },
+  { path: 'admin_catalog', component: AdminCatalogComponent },
+  { path: 'admin_product', component: AdminProductComponent },
+  { path: 'client_product', component: ClientProductComponent },
+  { path: 'client_search', component: ClientSearchComponent },
+  { path: 'admin_landing', component: AdminLandingComponent },
+  { path: 'client_landing', component: ClientLandingComponent },
+  { path: 'new_catalog', component: NewCatalogComponent},
+  { path: 'update_catalog', component: UpdateCatalogComponent},
+  { path: 'update_product', component: UpdateProductComponent},
+  { path: 'new_product', component: NewProductComponent}
 ]
 
 @NgModule({
@@ -31,7 +46,11 @@ const appRoutes: Routes = [
     ClientProductComponent,
     ClientSearchComponent,
     AdminLandingComponent,
-    ClientLandingComponent
+    ClientLandingComponent,
+    NewCatalogComponent,
+    UpdateCatalogComponent,
+    UpdateProductComponent,
+    NewProductComponent
   ],
   imports: [
     BrowserModule,

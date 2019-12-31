@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Update product</h1>
+
+        <form id="form" [formGroup]="updateproductForm">
+
+            <p>
+                <label>Product name: </label>
+                <input formControlName="product_name" type="text"/>
+            </p>
+            <p>
+                <label>Product id: </label>
+                <input formControlName="product_id" type="text"/>
+            </p>
+            <p>
+                <label>Availability: </label>
+                <input formControlName="availability" type="checkbox"/>
+            </p>
+        
+            <p>
+                <label>Product price: </label>
+                <input formControlName="product_price" type="text"/>
+            </p>
+            <p>
+                <label>Product color: </label>
+                <input formControlName="product_color" type="text"/>
+            </p>
+            <!--
+            <p>
+                <select [(ngModel)]="seleccion">
+                    <option value="example1">Example1</option>
+                    <option value="example2">Example2</option>
+                </select>
+            </p>
+            -->
+        
+            <button [disabled]="updateproductForm.invalid" type="submit">Update</button>
+        
+                
+        </form>
+    </body>
+</html>
